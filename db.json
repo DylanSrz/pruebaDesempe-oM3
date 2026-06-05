@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Admin",
+      "email": "admin@cineapp.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Bob User",
+      "email": "bob@cineapp.com",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Carla User",
+      "email": "carla@cineapp.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Room A",
+      "capacity": 100,
+      "type": "2D",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Room B",
+      "capacity": 60,
+      "type": "3D",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Room IMAX",
+      "capacity": 200,
+      "type": "IMAX",
+      "status": "active"
+    }
+  ],
+  "functions": [
+    {
+      "id": 1,
+      "movie": "Interstellar",
+      "roomId": 3,
+      "date": "2026-06-20",
+      "time": "20:00",
+      "totalCapacity": 200,
+      "availableSeats": 185,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "movie": "The Matrix",
+      "roomId": 1,
+      "date": "2026-06-21",
+      "time": "18:30",
+      "totalCapacity": 100,
+      "availableSeats": 100,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "movie": "Inception",
+      "roomId": 2,
+      "date": "2026-06-22",
+      "time": "21:15",
+      "totalCapacity": 60,
+      "availableSeats": 54,
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "movie": "Dune: Part Two",
+      "roomId": 3,
+      "date": "2026-06-25",
+      "time": "19:00",
+      "totalCapacity": 200,
+      "availableSeats": 200,
+      "status": "cancelled"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "userId": 2,
+      "functionId": 1,
+      "tickets": 2,
+      "reservationDate": "2026-06-05T10:15:00.000Z",
+      "status": "confirmed"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "functionId": 3,
+      "tickets": 6,
+      "reservationDate": "2026-06-05T11:30:00.000Z",
+      "status": "pending"
+    }
+  ]
+}

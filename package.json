@@ -1,0 +1,20 @@
+{
+  "name": "cineapp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cinema showtimes and ticket booking SPA built with Vanilla JS + Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "vite": "^5.4.0"
+  }
+}
