@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineApp — Showtimes & Bookings</title>
+  </head>
+  <body>
+    <!-- Navbar is rendered dynamically based on the session/role -->
+    <header id="navbar"></header>
+
+    <!-- The router renders every view into this single container (SPA) -->
+    <main id="app" class="container py-4"></main>
+
+    <!-- Toast notifications mount point -->
+    <div
+      id="toast-container"
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      style="z-index: 1100"
+    ></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
