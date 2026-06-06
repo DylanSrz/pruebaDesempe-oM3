@@ -30,7 +30,13 @@ npm install
 
 ## Running the project
 
-The app needs **two processes**: the mock API and the Vite dev server.
+In one terminal:
+
+```bash
+npm start
+```
+
+Or also in **two processes**: the simulated API and the Vite development server.
 
 In one terminal, start the API:
 
