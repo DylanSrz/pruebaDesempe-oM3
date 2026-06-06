@@ -43,27 +43,38 @@
       "capacity": 200,
       "type": "IMAX",
       "status": "active"
+    },
+    {
+      "name": "Room C",
+      "capacity": 30,
+      "type": "2D",
+      "status": "active",
+      "id": 4
+    },
+    {
+      "name": "Room C MAX",
+      "capacity": 140,
+      "type": "IMAX",
+      "status": "inactive",
+      "id": 5
+    },
+    {
+      "name": "Room Plus",
+      "capacity": 500,
+      "type": "IMAX",
+      "status": "active",
+      "id": 6
     }
   ],
   "functions": [
-    {
-      "id": 1,
-      "movie": "Interstellar",
-      "roomId": 3,
-      "date": "2026-06-20",
-      "time": "20:00",
-      "totalCapacity": 200,
-      "availableSeats": 185,
-      "status": "active"
-    },
     {
       "id": 2,
       "movie": "The Matrix",
       "roomId": 1,
       "date": "2026-06-21",
       "time": "18:30",
-      "totalCapacity": 100,
-      "availableSeats": 100,
+      "totalCapacity": 150,
+      "availableSeats": 90,
       "status": "active"
     },
     {
@@ -73,7 +84,7 @@
       "date": "2026-06-22",
       "time": "21:15",
       "totalCapacity": 60,
-      "availableSeats": 54,
+      "availableSeats": 12,
       "status": "active"
     },
     {
@@ -85,24 +96,168 @@
       "totalCapacity": 200,
       "availableSeats": 200,
       "status": "cancelled"
+    },
+    {
+      "movie": "Killer Boy",
+      "roomId": 3,
+      "date": "2026-08-13",
+      "time": "20:59",
+      "totalCapacity": 300,
+      "availableSeats": 132,
+      "status": "active",
+      "id": 5
+    },
+    {
+      "movie": "X-Men",
+      "roomId": 6,
+      "date": "2026-07-10",
+      "time": "07:40",
+      "totalCapacity": 350,
+      "availableSeats": 29,
+      "status": "active",
+      "id": 6
+    },
+    {
+      "movie": "AVATAR",
+      "roomId": 5,
+      "date": "2026-07-07",
+      "time": "16:00",
+      "totalCapacity": 140,
+      "availableSeats": 50,
+      "status": "active",
+      "id": 7
+    },
+    {
+      "movie": "From",
+      "roomId": 2,
+      "date": "2026-08-07",
+      "time": "23:07",
+      "totalCapacity": 45,
+      "availableSeats": 24,
+      "status": "active",
+      "id": 8
     }
   ],
   "reservations": [
-    {
-      "id": 1,
-      "userId": 2,
-      "functionId": 1,
-      "tickets": 2,
-      "reservationDate": "2026-06-05T10:15:00.000Z",
-      "status": "confirmed"
-    },
     {
       "id": 2,
       "userId": 3,
       "functionId": 3,
       "tickets": 6,
       "reservationDate": "2026-06-05T11:30:00.000Z",
-      "status": "pending"
+      "status": "cancelled"
+    },
+    {
+      "userId": 2,
+      "functionId": 7,
+      "tickets": 54,
+      "reservationDate": "2026-06-06T00:42:07.526Z",
+      "status": "confirmed",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "functionId": 5,
+      "tickets": 18,
+      "reservationDate": "2026-06-06T00:42:34.039Z",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "functionId": 2,
+      "tickets": 90,
+      "reservationDate": "2026-06-06T00:42:56.773Z",
+      "status": "cancelled",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "functionId": 3,
+      "tickets": 20,
+      "reservationDate": "2026-06-06T00:43:04.755Z",
+      "status": "confirmed",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "functionId": 6,
+      "tickets": 163,
+      "reservationDate": "2026-06-06T00:43:11.692Z",
+      "status": "confirmed",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "functionId": 2,
+      "tickets": 15,
+      "reservationDate": "2026-06-06T00:44:00.837Z",
+      "status": "confirmed",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "functionId": 2,
+      "tickets": 45,
+      "reservationDate": "2026-06-06T00:46:50.518Z",
+      "status": "pending",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "functionId": 3,
+      "tickets": 19,
+      "reservationDate": "2026-06-06T00:46:58.018Z",
+      "status": "pending",
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "functionId": 5,
+      "tickets": 150,
+      "reservationDate": "2026-06-06T00:47:06.951Z",
+      "status": "pending",
+      "id": 12
+    },
+    {
+      "userId": 3,
+      "functionId": 6,
+      "tickets": 78,
+      "reservationDate": "2026-06-06T00:47:14.151Z",
+      "status": "pending",
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "functionId": 7,
+      "tickets": 36,
+      "reservationDate": "2026-06-06T00:47:26.651Z",
+      "status": "pending",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "functionId": 8,
+      "tickets": 16,
+      "reservationDate": "2026-06-06T00:47:33.401Z",
+      "status": "pending",
+      "id": 15
+    },
+    {
+      "userId": 3,
+      "functionId": 6,
+      "tickets": 80,
+      "reservationDate": "2026-06-06T00:47:51.336Z",
+      "status": "pending",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "functionId": 3,
+      "tickets": 9,
+      "reservationDate": "2026-06-06T00:48:05.100Z",
+      "status": "pending",
+      "id": 17
     }
   ]
 }
